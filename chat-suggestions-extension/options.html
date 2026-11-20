@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chat Suggestions - Options</title>
+  <style>
+    body { font: 15px/1.5 "Segoe UI", Arial, sans-serif; max-width: 520px; margin: 40px auto; padding: 0 16px; color: #1f1f2e; }
+    h1 { color: #5b3fe0; font-size: 22px; }
+    input { width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 15px; border: 1.5px solid #d9ddf7; border-radius: 10px; }
+    button { margin-top: 12px; padding: 9px 20px; font-size: 15px; border: 0; border-radius: 999px; background: #5b3fe0; color: #fff; cursor: pointer; }
+    #status { margin-left: 12px; color: #188038; }
+    small { color: #666; }
+  </style>
+</head>
+<body>
+  <h1>✦ Chat Suggestions</h1>
+  <p>Paste your free Gemini API key. Get one at
+     <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a>.</p>
+  <input id="key" type="password" placeholder="Gemini API key" autocomplete="off">
+  <button id="save">Save</button><span id="status"></span>
+  <p><small>The key is stored only in this browser (chrome.storage.local) and is sent only to Google's Gemini API.</small></p>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Chat Suggestions",
+  "version": "1.0",
+  "description": "AI quick-reply suggestions above the message box in Google Chat.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://generativelanguage.googleapis.com/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.google.com/*", "https://mail.google.com/chat/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "options_page": "options.html"
+}
